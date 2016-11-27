@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
   response.render('pages/index');
-  console.log(**Processed GET - Host Name: '+request.hostname);
+  console.log('**Processed GET - Host Name: '+request.hostname);
 });
 
 app.listen(app.get('port'), function() {
