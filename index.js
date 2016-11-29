@@ -1,5 +1,4 @@
 var express = require('express');
-var pgp = require('pg-promise')
 
 var app = express();
 app.set('port', (process.env.PORT || 5000));
