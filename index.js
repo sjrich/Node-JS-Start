@@ -7,6 +7,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.logger());
 
 //do database stuff
+console.log('****DB URL='+process.env.DATABASE_URL);
 var pg = require('pg');
 pg.connect(process.env.DATABASE_URL, function(err, client, done) {
   client.query('SELECT * FROM COMPANY', function(err, result) {
