@@ -4,6 +4,7 @@ var pgp = require('pg-promise')
 var app = express();
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
+app.use(express.logger());
 
 //do database stuff
 var pg = require('pg');
